@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background: rgb(17,103,177);
+    background: linear-gradient(83deg, rgba(17,103,177,1) 0%, rgba(24,123,205,1) 10%, rgba(42,157,244,1) 94%);
+}
+.brand .brand-name {
+    position: relative;
+}
+.text-blue-500 {
+    color: #0097DA;
+}
+
+.brand .brand-name:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    height: 2px;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: white;
+    z-index: 5;
+}
